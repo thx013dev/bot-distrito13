@@ -17,6 +17,7 @@ const config = {
   cargoRecruta: process.env.cargoRecruta,
   cargoStaff: process.env.cargoStaff
 };
+
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
