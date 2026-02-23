@@ -11,8 +11,12 @@ const {
   PermissionsBitField
 } = require('discord.js');
 
-const config = require('./config.json');
-
+const config = {
+  token: process.env.token,
+  canalRegistros: process.env.canalRegistros,
+  cargoRecruta: process.env.cargoRecruta,
+  cargoStaff: process.env.cargoStaff
+};
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
